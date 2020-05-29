@@ -1,0 +1,9 @@
+Address  | doitgen_small_1000_leases.txt | leases_median/doitgen_small_rand_phased_median.txt
+Dump | leases | single 
+000007e8 | 2375 | 3d0 
+00000804 | d0 | 1fc8 
+00000838 | 1 | NA
+00000890 | c | 19 
+0000073c | NA    | 1 
+00000744 | NA    | 1 
+000008bc | NA    | 1 
