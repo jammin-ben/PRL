@@ -1,0 +1,2 @@
+Address  | 6_1_leases_min/floyd_small_rand_min_leases.txt | 6_2_min_leases/floyd_small_rand_leases_min.txt
+0000070c | 9e39f 0.2155631767146193% 14 0.7844368232853807% | 9e39f 0.3476247529889234% 14 0.6523752470110766% 

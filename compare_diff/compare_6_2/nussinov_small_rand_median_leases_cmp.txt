@@ -1,0 +1,2 @@
+Address  | 6_1_leases_median/nussinov_small_rand_median_leases.txt | 6_2_median_leases/nussinov_small_rand_leases_median.txt
+00000904 | dfa 0.040604407506877264% daa 0.9593955924931228% | 4daa3 0.005914386240412098% dfa 0.9940856137595879% 

@@ -1,0 +1,3 @@
+Address  | leases_min/nussinov_small_rand_min_leases.txt | 6_1_leases_min/nussinov_small_rand_min_leases.txt
+00000904 | 4daa3 0% 0 1% | daa 0.9186663193433963% 0 0.08133368065660374% 
+000008dc | 1d3fe 0% c56 1% | c56 

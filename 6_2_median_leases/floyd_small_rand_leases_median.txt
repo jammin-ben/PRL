@@ -1,0 +1,370 @@
+sample rate: 0.00390625
+00000700,
+	[2,22592]
+
+0000070c,
+	[4,7]
+	[20,20568]
+	[8,1961]
+	[645608,1]
+	[645687,140]
+	[645528,1]
+	[645448,2]
+	[646255,1]
+	[646415,1]
+	[646655,1]
+	[646895,1]
+	[647935,1]
+	[648095,1]
+	[100307,1]
+	[78825,1]
+
+00000710,
+	[1,22709]
+
+00000788,
+	[12,113]
+	[16,19151]
+	[8,1987]
+	[648963,1195]
+	[15,6]
+	[23,101]
+	[648795,1]
+	[648956,85]
+	[648715,1]
+	[648635,1]
+	[584033,1]
+	[648395,1]
+	[3299,5]
+	[648315,1]
+	[3379,1]
+	[647995,1]
+	[647675,1]
+	[223333,1]
+	[205298,1]
+	[646395,1]
+	[19,1]
+	[646155,1]
+	[3539,1]
+	[42983,1]
+	[645588,4]
+	[645675,4]
+	[645508,2]
+	[17734,1]
+	[645428,2]
+	[-622338,1]
+	[-360067,1]
+	[-251377,1]
+	[-245290,1]
+	[-534490,1]
+	[-438941,1]
+	[-165129,1]
+	[-104530,1]
+
+00000758,
+	[4,22654]
+
+00000744,
+	[1,22821]
+
+0000074c,
+	[2,22696]
+
+0000075c,
+	[1,22655]
+
+0000077c,
+	[2,22742]
+
+00000794,
+	[1,22723]
+
+000006ec,
+	[1,22727]
+
+00000768,
+	[1,22768]
+
+0000071c,
+	[1,22799]
+
+0000078c,
+	[1,22657]
+
+00000730,
+	[20,20969]
+	[3307,1287]
+	[4,127]
+	[3467,64]
+	[3387,63]
+	[3547,62]
+	[21353,1]
+	[75458,1]
+	[3304,2]
+	[263022,1]
+	[356804,1]
+	[461407,1]
+	[537154,1]
+	[540761,1]
+	[573224,1]
+
+0000079c,
+	[1,22849]
+
+00000738,
+	[1,22691]
+
+00000798,
+	[1,22762]
+
+000006f8,
+	[1,22673]
+
+00000724,
+	[2,22622]
+
+000007ac,
+	[1,96]
+
+000007a4,
+	[1,130]
+
+000006e4,
+	[1,112]
+
+000007b0,
+	[1,148]
+
+000007b4,
+	[1,118]
+
+000007c4,
+	[1,1]
+
+000007bc,
+	[1,1]
+
+000007c8,
+	[1,2]
+
+len(carl_order):
+35
+Printing carl assignment order:
+00000710,1,1.0
+00000744,1,1.0
+0000075c,1,1.0
+00000794,1,1.0
+000006ec,1,1.0
+00000768,1,1.0
+0000071c,1,1.0
+0000078c,1,1.0
+0000079c,1,1.0
+00000738,1,1.0
+00000798,1,1.0
+000006f8,1,1.0
+000007ac,1,1.0
+000007a4,1,1.0
+000006e4,1,1.0
+000007b0,1,1.0
+000007b4,1,1.0
+000007c4,1,1.0
+000007bc,1,1.0
+000007c8,1,1.0
+00000700,2,0.5
+0000074c,2,0.5
+0000077c,2,0.5
+00000724,2,0.5
+00000758,4,0.25
+00000788,16,0.06134316039777679
+0000070c,20,0.052395167815194044
+00000730,20,0.0469208732940695
+00000788,23,0.010244049412473637
+00000730,3547,0.0003006169359201848
+00000730,21353,7.020105582387959e-06
+00000730,75458,2.6403685954559255e-06
+00000730,573224,2.6320129986348625e-06
+0000070c,648095,1.5664200111640402e-06
+00000788,648963,1.543782956231464e-06
+assigning lease 1 to address 00000710
+Average Cache Occupancy Per Bin: [0.04,0.05,0.04,0.04,0.04,0.05,0.04,0.05,0.04,0.04]
+Total cost: 579584.0
+assigning lease 1 to address 00000744
+Average Cache Occupancy Per Bin: [0.09,0.09,0.09,0.09,0.09,0.10,0.09,0.09,0.09,0.09]
+Total cost: 1164800.0
+assigning lease 1 to address 0000075c
+Average Cache Occupancy Per Bin: [0.14,0.14,0.14,0.14,0.15,0.14,0.14,0.14,0.14,0.14]
+Total cost: 1748736.0
+assigning lease 1 to address 00000794
+Average Cache Occupancy Per Bin: [0.19,0.19,0.19,0.19,0.19,0.19,0.19,0.19,0.19,0.19]
+Total cost: 2334208.0
+assigning lease 1 to address 000006ec
+Average Cache Occupancy Per Bin: [0.24,0.24,0.25,0.24,0.25,0.24,0.24,0.24,0.24,0.24]
+Total cost: 2918656.0
+assigning lease 1 to address 00000768
+Average Cache Occupancy Per Bin: [0.29,0.29,0.30,0.29,0.29,0.29,0.29,0.29,0.29,0.29]
+Total cost: 3503872.0
+assigning lease 1 to address 0000071c
+Average Cache Occupancy Per Bin: [0.34,0.34,0.35,0.34,0.34,0.34,0.34,0.34,0.34,0.34]
+Total cost: 4082688.0
+assigning lease 1 to address 0000078c
+Average Cache Occupancy Per Bin: [0.39,0.39,0.39,0.39,0.39,0.39,0.39,0.39,0.39,0.39]
+Total cost: 4658176.0
+assigning lease 1 to address 0000079c
+Average Cache Occupancy Per Bin: [0.44,0.44,0.44,0.44,0.44,0.45,0.44,0.44,0.44,0.44]
+Total cost: 5241856.0
+assigning lease 1 to address 00000738
+Average Cache Occupancy Per Bin: [0.49,0.49,0.49,0.49,0.49,0.49,0.49,0.49,0.49,0.49]
+Total cost: 5825024.0
+assigning lease 1 to address 00000798
+Average Cache Occupancy Per Bin: [0.54,0.54,0.54,0.54,0.54,0.54,0.54,0.54,0.54,0.54]
+Total cost: 6412800.0
+assigning lease 1 to address 000006f8
+Average Cache Occupancy Per Bin: [0.59,0.59,0.59,0.59,0.59,0.59,0.59,0.59,0.59,0.59]
+Total cost: 6987520.0
+assigning lease 1 to address 000007ac
+Average Cache Occupancy Per Bin: [0.59,0.59,0.59,0.59,0.59,0.59,0.59,0.59,0.59,0.59]
+Total cost: 6989824.0
+assigning lease 1 to address 000007a4
+Average Cache Occupancy Per Bin: [0.59,0.59,0.59,0.59,0.59,0.59,0.59,0.59,0.59,0.59]
+Total cost: 6992896.0
+assigning lease 1 to address 000006e4
+Average Cache Occupancy Per Bin: [0.59,0.59,0.59,0.59,0.59,0.59,0.59,0.59,0.59,0.59]
+Total cost: 6996480.0
+assigning lease 1 to address 000007b0
+Average Cache Occupancy Per Bin: [0.59,0.59,0.59,0.59,0.59,0.59,0.59,0.59,0.59,0.59]
+Total cost: 7000576.0
+assigning lease 1 to address 000007b4
+Average Cache Occupancy Per Bin: [0.59,0.59,0.59,0.59,0.59,0.60,0.59,0.59,0.59,0.59]
+Total cost: 7004416.0
+assigning lease 1 to address 000007c4
+Average Cache Occupancy Per Bin: [0.59,0.59,0.59,0.59,0.59,0.60,0.59,0.59,0.59,0.59]
+Total cost: 7004416.0
+assigning lease 1 to address 000007bc
+Average Cache Occupancy Per Bin: [0.59,0.59,0.59,0.59,0.59,0.60,0.59,0.59,0.59,0.59]
+Total cost: 7004416.0
+assigning lease 1 to address 000007c8
+Average Cache Occupancy Per Bin: [0.59,0.59,0.59,0.59,0.59,0.60,0.59,0.59,0.59,0.59]
+Total cost: 7004416.0
+assigning lease 2 to address 00000700
+Average Cache Occupancy Per Bin: [0.69,0.69,0.69,0.69,0.69,0.69,0.69,0.69,0.69,0.69]
+Total cost: 8167168.0
+assigning lease 2 to address 0000074c
+Average Cache Occupancy Per Bin: [0.79,0.79,0.79,0.79,0.79,0.79,0.79,0.79,0.79,0.79]
+Total cost: 9312000.0
+assigning lease 2 to address 0000077c
+Average Cache Occupancy Per Bin: [0.89,0.89,0.89,0.89,0.89,0.89,0.89,0.89,0.89,0.89]
+Total cost: 10479872.0
+assigning lease 2 to address 00000724
+Average Cache Occupancy Per Bin: [0.99,0.99,0.99,0.99,0.99,0.99,0.99,0.99,0.99,0.99]
+Total cost: 11635968.0
+assigning lease 4 to address 00000758
+Average Cache Occupancy Per Bin: [1.19,1.19,1.19,1.19,1.19,1.19,1.19,1.19,1.19,1.19]
+Total cost: 13961472.0
+assigning lease 16 to address 00000788
+Average Cache Occupancy Per Bin: [1.94,1.94,1.95,1.94,1.95,1.94,1.95,1.95,1.96,1.96]
+Total cost: 22780672.0
+assigning lease 20 to address 0000070c
+Average Cache Occupancy Per Bin: [2.89,2.88,2.91,2.88,2.90,2.87,2.88,2.88,2.90,2.91]
+Total cost: 33885952.0
+assigning lease 20 to address 00000730
+Average Cache Occupancy Per Bin: [3.87,3.87,3.88,3.88,3.88,3.86,3.87,3.87,3.88,3.89]
+Total cost: 45344512.0
+assigning lease 23 to address 00000788
+Average Cache Occupancy Per Bin: [3.90,3.89,3.90,3.90,3.90,3.88,3.89,3.90,3.90,3.92]
+Total cost: 45588224.0
+assigning lease 3547 to address 00000730
+Average Cache Occupancy Per Bin: [15.4,14.6,14.1,14.9,13.7,15.9,13.6,14.6,14.9,14.4]
+Total cost: 180324352.0
+assigning lease 21353 to address 00000730
+Average Cache Occupancy Per Bin: [15.8,15.0,14.1,14.9,14.1,16.3,13.6,15.0,16.1,14.4]
+Total cost: 184882688.0
+assigning lease 75458 to address 00000730
+Average Cache Occupancy Per Bin: [15.8,16.2,14.1,14.9,15.3,17.5,13.6,16.2,19.6,14.4]
+Total cost: 184882688.0
+assigning lease 573224 to address 00000730
+Average Cache Occupancy Per Bin: [15.8,16.2,14.1,14.9,19.4,23.7,13.6,24.7,50.8,14.4]
+Total cost: 184882688.0
+addr: 0000070c ri: 648095
+bin target: 1495911424
+	bin: 0.0 current capacity: 15.819776281085478  avg impact: 212.13474064090042
+	bin: 1.0 current capacity: 16.268982942134414  avg impact: 226.29378629305796
+	bin: 2.0 current capacity: 14.198409009543068  avg impact: 240.46553686857865
+	bin: 3.0 current capacity: 14.979279885491401  avg impact: 254.6017136586825
+	bin: 4.0 current capacity: 19.441511831117616  avg impact: 198.03352429508553
+	bin: 5.0 current capacity: 23.73338827847604  avg impact: 282.8672328663224
+	bin: 6.0 current capacity: 13.609470096539619  avg impact: 169.72033971979346
+	bin: 7.0 current capacity: 24.716311245979227  avg impact: 297.11258437718834
+	bin: 8.0 current capacity: 50.873470326542545  avg impact: 117.06991062059032
+	bin: 9.0 current capacity: 14.43388819256721  avg impact: 127.2902547898451
+num_full_bins: 0
+printing bin ranks sorted:
+	bin: 7.0 rank: 0.3476247529889234
+	bin: 5.0 rank: 0.36860618554146335
+	bin: 3.0 rank: 0.44391185939158084
+	bin: 2.0 rank: 0.4732553049905558
+	bin: 1.0 rank: 0.4937431950215823
+	selecting this^ bin
+	bin: 0.0 rank: 0.5288158996494219
+	bin: 4.0 rank: 0.5481823774802982
+	bin: 8.0 rank: 0.6588074532952825
+	bin: 6.0 rank: 0.6739942312884712
+	bin: 9.0 rank: 0.8921822962404252
+acceptable_ratio: 0.4937431950215823
+Assigning 0000070c dual lease lease 648095 * 0.4937431950215823. Bin saturation: [120.,128.,132.,140.,117.,163.,97.4,171.,108.,77.2]
+addr: 00000788 ri: 648963
+bin target: 1495911424
+	bin: 0.0 current capacity: 120.55986090019836  avg impact: 1847.9404785292957
+	bin: 1.0 current capacity: 128.0  avg impact: 1647.5681968934546
+	bin: 2.0 current capacity: 132.9266314756152  avg impact: 2089.6638247158676
+	bin: 3.0 current capacity: 140.68714344529934  avg impact: 1819.4981418365048
+	bin: 4.0 current capacity: 117.21921683795729  avg impact: 1663.303638769457
+	bin: 5.0 current capacity: 163.397159600808  avg impact: 1691.662451543655
+	bin: 6.0 current capacity: 97.40773288993881  avg impact: 1928.4183917456332
+	bin: 7.0 current capacity: 171.41362793749167  avg impact: 2075.3564819410058
+	bin: 8.0 current capacity: 108.6759420372439  avg impact: 1720.0209576472892
+	bin: 9.0 current capacity: 77.2825852876166  avg impact: 2146.982918860308
+num_full_bins: 5
+printing bin ranks sorted:
+	bin: 5.0 rank: -0.02092448145817024
+	bin: 7.0 rank: -0.020918636540402193
+	bin: 3.0 rank: -0.006972880682633514
+	bin: 2.0 rank: -0.0023576191621564177
+	bin: 1.0 rank: 0.0
+	bin: 0.0 rank: 0.004026178973969424
+	bin: 4.0 rank: 0.006481548474227195
+	bin: 8.0 rank: 0.011234780528016528
+	bin: 6.0 rank: 0.015863915860275846
+	bin: 9.0 rank: 0.023622644720110737
+acceptable_ratio: 0
+Dump single leases (last one may be dual)
+0000070c 9e39f percentage 0.4937431950215823
+0000070c 14 percentage 0.5062568049784177
+00000700 2
+00000710 1
+00000788 17
+00000758 4
+00000744 1
+0000074c 2
+0000075c 1
+0000077c 2
+00000794 1
+000006ec 1
+00000768 1
+0000071c 1
+0000078c 1
+00000730 8bf28
+0000079c 1
+00000738 1
+00000798 1
+000006f8 1
+00000724 2
+000007ac 1
+000007a4 1
+000006e4 1
+000007b0 1
+000007b4 1
+000007c4 1
+000007bc 1
+000007c8 1
+Dump dual leases
+

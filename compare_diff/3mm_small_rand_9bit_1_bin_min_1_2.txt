@@ -1,0 +1,3 @@
+Address  | bin_variation_leases_6_3/1_bin/3mm_small_rand_9bit_1_bin_min.txt | bin_variation_leases_6_3/2_bin/3mm_small_rand_9bit_2_bin_min.txt
+00000b38 | d93c 0.42073560599350235% 40e 0.5792643940064977% | 40e 
+000008f4 | a598 | a598 0.8187187182478456% 4d6 0.1812812817521544% 

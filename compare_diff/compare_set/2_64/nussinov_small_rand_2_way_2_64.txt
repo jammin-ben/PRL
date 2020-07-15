@@ -1,0 +1,5 @@
+Address  | set_leases/2_way/nussinov_small_rand_2_way.txt | set_leases/64_way/nussinov_small_rand_64_way.txt
+00000904 | daa 0.6650625975054137% 0 0.33493740249458626% | 4dacd 0.0034332955811963778% e0e 0.9965667044188036% 
+00000798 | af1 | 49023 
+000008dc | 398c | 24aa4 
+000007bc | cce | 16733 

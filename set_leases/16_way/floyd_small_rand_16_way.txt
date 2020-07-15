@@ -1,0 +1,198 @@
+sample rate: 0.015625
+len(carl_order):
+36
+Printing carl assignment order:
+000006ec,1,1.0
+00000744,1,1.0
+0000079c,1,1.0
+00000794,1,1.0
+000006f8,1,1.0
+00000768,1,1.0
+0000071c,1,1.0
+00000738,1,1.0
+00000798,1,1.0
+00000710,1,1.0
+0000075c,1,1.0
+0000078c,1,1.0
+000007a4,1,1.0
+000007ac,1,1.0
+000007b4,1,1.0
+000006e4,1,1.0
+000007b0,1,1.0
+000007c4,1,1.0
+000006dc,1,1.0
+000007cc,1,1.0
+000007c8,1,1.0
+000007bc,1,1.0
+00000700,2,0.5
+00000724,2,0.5
+0000074c,2,0.5
+0000077c,2,0.5
+00000758,4,0.25
+00000788,16,0.06138951014054613
+0000070c,20,0.05245730301269193
+00000730,20,0.046896214449049595
+00000788,23,0.008932720607218465
+00000730,3547,0.0003008943015752782
+0000070c,1231,3.6393147898113743e-06
+00000730,627322,2.5085306766544093e-06
+0000070c,648815,1.55886986156401e-06
+00000788,648963,1.5372478825475955e-06
+TRACE LENGTH: 115724416.0
+assigning lease 1 to address 000006ec
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.04,0.0]
+Total cost: 0
+assigning lease 1 to address 00000744
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.09,0.0]
+Total cost: 0
+assigning lease 1 to address 0000079c
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.14,0.0]
+Total cost: 0
+assigning lease 1 to address 00000794
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.19,0.0]
+Total cost: 0
+assigning lease 1 to address 000006f8
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.24,0.0]
+Total cost: 0
+assigning lease 1 to address 00000768
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.29,0.0]
+Total cost: 0
+assigning lease 1 to address 0000071c
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.34,0.0]
+Total cost: 0
+assigning lease 1 to address 00000738
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.39,0.0]
+Total cost: 0
+assigning lease 1 to address 00000798
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.45,0.0]
+Total cost: 0
+assigning lease 1 to address 00000710
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.50,0.0]
+Total cost: 0
+assigning lease 1 to address 0000075c
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.54,0.0]
+Total cost: 0
+assigning lease 1 to address 0000078c
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.59,0.0]
+Total cost: 0
+assigning lease 1 to address 000007a4
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.60,0.0]
+Total cost: 0
+assigning lease 1 to address 000007ac
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.60,0.0]
+Total cost: 0
+assigning lease 1 to address 000007b4
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.60,0.0]
+Total cost: 0
+assigning lease 1 to address 000006e4
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.60,0.0]
+Total cost: 0
+assigning lease 1 to address 000007b0
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.60,0.0]
+Total cost: 0
+assigning lease 1 to address 000007c4
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.60,0.0]
+Total cost: 0
+assigning lease 1 to address 000006dc
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.60,0.0]
+Total cost: 0
+assigning lease 1 to address 000007cc
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.60,0.0]
+Total cost: 0
+assigning lease 1 to address 000007c8
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.60,0.0]
+Total cost: 0
+assigning lease 1 to address 000007bc
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.60,0.0]
+Total cost: 0
+assigning lease 2 to address 00000700
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.70,0.0]
+Total cost: 0
+assigning lease 2 to address 00000724
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.80,0.0]
+Total cost: 0
+assigning lease 2 to address 0000074c
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,0.90,0.0]
+Total cost: 0
+assigning lease 2 to address 0000077c
+Average Cache Occupancy Per Bin: [0.0,0.0,0.0,0.0,0.0,0.0,1.00,0.0]
+Total cost: 0
+assigning lease 4 to address 00000758
+Average Cache Occupancy Per Bin: [0.02,0.02,0.02,0.02,0.02,0.02,1.02,0.02]
+Total cost: 2868224.0
+assigning lease 16 to address 00000788
+Average Cache Occupancy Per Bin: [0.12,0.12,0.12,0.11,0.11,0.12,1.12,0.11]
+Total cost: 13935424.0
+assigning lease 20 to address 0000070c
+Average Cache Occupancy Per Bin: [0.23,0.23,0.24,0.23,0.23,0.23,1.23,0.23]
+Total cost: 27499328.0
+assigning lease 20 to address 00000730
+Average Cache Occupancy Per Bin: [0.36,0.36,0.36,0.35,0.36,0.36,1.36,0.36]
+Total cost: 41912896.0
+assigning lease 23 to address 00000788
+Average Cache Occupancy Per Bin: [0.36,0.36,0.36,0.36,0.36,0.36,1.36,0.36]
+Total cost: 42238144.0
+assigning lease 3547 to address 00000730
+Average Cache Occupancy Per Bin: [1.65,1.73,1.76,1.70,1.77,1.71,2.65,1.79]
+Total cost: 191576704.0
+assigning lease 1231 to address 0000070c
+Average Cache Occupancy Per Bin: [1.69,1.77,1.80,1.74,1.80,1.75,2.68,1.83]
+Total cost: 195994432.0
+assigning lease 627322 to address 00000730
+Average Cache Occupancy Per Bin: [1.86,3.23,2.24,3.18,2.13,2.80,3.70,2.53]
+Total cost: 215371008.0
+addr: 0000070c ri: 648815
+bin target: 1851590656.0
+num_full_bins: 0
+printing bin ranks sorted:
+	selecting this^ bin
+acceptable_ratio: 0.5288460015722392
+Assigning 0000070c dual lease lease 648815 * 0.5288460015722392. Bin saturation: [12.5,13.6,14.1,16.0,11.6,12.7,12.3,13.4]
+addr: 00000788 ri: 648963
+bin target: 1851590656.0
+num_full_bins: 1
+printing bin ranks sorted:
+acceptable_ratio: 0
+Final saturation:
+	0,12.50345846434742
+	1,13.611509293803078
+	2,14.118278344043622
+	3,16.0
+	4,11.63602353456281
+	5,12.7992357238447
+	6,12.381457874872648
+	7,13.469051498781269
+Dump single leases (last one may be dual)
+0000070c 9e66f percentage 0.5288460015722392
+0000070c 4cf percentage 0.47115399842776085
+00000700 2
+00000730 9927a
+000006ec 1
+00000758 4
+00000744 1
+00000724 2
+0000079c 1
+00000794 1
+000006f8 1
+00000768 1
+0000071c 1
+00000788 17
+00000738 1
+0000074c 2
+00000798 1
+0000077c 2
+00000710 1
+0000075c 1
+0000078c 1
+000007a4 1
+000007ac 1
+000007b4 1
+000006e4 1
+000007b0 1
+000007c4 1
+000006dc 1
+000007cc 1
+000007c8 1
+000007bc 1
+Dump dual leases
+

@@ -1,0 +1,2 @@
+Address  | bin_variation_leases_6_3/2_bin/nussinov_small_rand_9bit_2_bin_min.txt | bin_variation_leases_6_3/5_bin/nussinov_small_rand_9bit_5_bin_min.txt
+00000904 | 4daa3 0.005804724933880391% dfa 0.9941952750661196% | daa 0.9515454053829194% 0 0.04845459461708057% 

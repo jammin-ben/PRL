@@ -1,0 +1,2 @@
+Address  | CARL_leases/nussinov_small_rand_9bit_with_neg_leases.txt | bin_variation_leases_6_3/1_bin/nussinov_small_rand_9bit_1_bin_min.txt
+00000904 | 4daa3 0.039842% dfa 0.960158% | 4daa3 0.03150518557674528% dfa 0.9684948144232547% 

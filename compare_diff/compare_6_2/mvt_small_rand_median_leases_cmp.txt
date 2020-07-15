@@ -1,0 +1,2 @@
+Address  | 6_1_leases_median/mvt_small_rand_median_leases.txt | 6_2_median_leases/mvt_small_rand_leases_median.txt
+00000804 | 474ee 0.0022408087065362665% 18 0.9977591912934637% | 474ee 0.0025717326883226187% 18 0.9974282673116773% 

@@ -12,12 +12,19 @@ def parse_file(filename):
 		for line in f.readlines():
 			lins=line.split()
 #			print(lins)
-			if(len(lins)>0):
-				if(lins[0]=="Dump"):
-					parsing=not parsing
-					
+			if(len(lins)>1):
+				if(lins[0]=="Dump" and lins[1]=="single"):
+					parsing=True
+				elif(lins[0]=="Dump" and lins[1]=="dual"):
+					parsing=False
+				
 				if(parsing):
-					ls[lins[0]]=lins[1]
+					if len(lins)==4:
+						if(lins[0] in ls):
+							ls[lins[0]]+=" "+lins[1]+" "+lins[3]+"%"
+						else: ls[lins[0]]=lins[1] + " "+ lins[3]+"%"
+					else:
+						ls[lins[0]]=lins[1]
 	return ls	
 ls1=parse_file(args.f1)
 ls2=parse_file(args.f2)
