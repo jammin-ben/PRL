@@ -97,7 +97,8 @@ def build_ri_distributions(trace_file):
 		cells = line.split(',')
 		#cells[0]: address (string)
 		#cells[1]: ri
-		#cells[2]: logical time
+		#cells[2]: tag
+		#cells[3]: logical time
 		if cells[0] not in distributions:
 			#construct new ri_histogram object
 			hist = ri_histogram(cells[0])
@@ -109,7 +110,7 @@ def build_ri_distributions(trace_file):
 		#increment value of the correct histogram
 		hist.add_ri(interpret_hex(cells[1]))
 		
-	last_address = int(lines[-1].split(",")[2])
+	last_address = int(lines[-1].split(",")[3])
 	return distributions,last_address
 
 def carl(distributions):
@@ -196,11 +197,14 @@ def get_max_ppuc_single(distribution,current_lease):
 	
 	return max_value,lease
 
-def get_binned_hists(trace_file,bin_width):
+def get_binned_hists(trace_file,bin_endpts):
 	#read file
 	bins={}
 	binned_ri_distributions = {}
 	curr_bin = 0
+	bin_idx = 0
+	
+	bin_width = bin_endpts[1]-bin_endpts[0]
 
 	curr_bin_dict={}
 	curr_ri_distribution_dict={}
@@ -216,17 +220,19 @@ def get_binned_hists(trace_file,bin_width):
 		cells = line.split(',')
 		#cells[0]: address (string)
 		#cells[1]: ri
-		#cells[2]: logical time
+		#cells[2]: tag
+		#cells[3]: logical time
 		
-		#if(int(cells[2])>=curr_bin+bin_width): Change as of 6/3 (fix off-by-one error w/ bins)
-		if(int(cells[2])>curr_bin+bin_width):
+		if(int(cells[3])>curr_bin+bin_width):
 			curr_bin_dict={}
 			curr_ri_distribution_dict={}
 
 			curr_bin+=bin_width
 			bins[curr_bin]=curr_bin_dict
 			binned_ri_distributions[curr_bin]=curr_ri_distribution_dict	
-		
+			bin_idx +=1 
+			bin_width = bin_endpts[bin_idx+1]-bin_endpts[bin_idx]
+			
 		#handle frequency dict
 		if cells[0] not in curr_bin_dict:
 			curr_bin_dict[cells[0]]=1
@@ -260,8 +266,16 @@ def get_binned_hists(trace_file,bin_width):
 #cache_size: number of cache blocks in fully assoc cache
 #carl_order: list of Lease objects in order of PPUC
 #bin_width: logical time range of each bin
-def phased_CARL(addrs,binned_ri_distributions,binned_freq_hists,cache_size,carl_order,bin_width,consensus,sample_rate):
-	bin_target = bin_width * cache_size
+def phased_CARL(addrs,binned_ri_distributions,binned_freq_hists,cache_size,carl_order,bin_endpts,consensus,sample_rate):
+	#bin_idx = 0
+	#bin_width = bin_endpts[bin_idx+1]-bin_endpts[bin_idx]
+	#bin_target = bin_width * cache_size
+	bin_targets = {}
+	bin_width={}
+	for i,b in enumerate(bin_endpts[:-1]):
+		bin_targets[b] = (bin_endpts[i+1]-bin_endpts[i] )*cache_size
+		bin_width[b] = (bin_endpts[i+1]-bin_endpts[i])
+
 	bin_endpoints = binned_freq_hists.keys()
 	num_full_bins = 0
 	leases={}
@@ -277,7 +291,7 @@ def phased_CARL(addrs,binned_ri_distributions,binned_freq_hists,cache_size,carl_
 		bin_saturation[b]=0
 
 	#go in order of PPUC	
-	print(f"bin_width: {bin_width}")
+	#print(f"bin_width: {bin_width}")
 	for lease_assignment in carl_order:
 		addr = lease_assignment.address
 
@@ -303,7 +317,7 @@ def phased_CARL(addrs,binned_ri_distributions,binned_freq_hists,cache_size,carl_
 			else:
 				impact_dict[b] = 0
 
-			if (bin_saturation[b] + impact) > bin_target:
+			if (bin_saturation[b] + impact) > bin_targets[b]:
 				num_unsuitable +=1
 
 		#if no bins are overful, increse lease
@@ -317,7 +331,7 @@ def phased_CARL(addrs,binned_ri_distributions,binned_freq_hists,cache_size,carl_
 			for b in bin_saturation:
 				if(addr in binned_ri_distributions[b]):
 					bin_saturation[b]+=impact_dict[b]
-				bin_cache_size_string+=str(bin_saturation[b]/bin_width)[:4]+','
+				bin_cache_size_string+=str(bin_saturation[b]/bin_width[b])[:4]+','
 			bin_cache_size_string=bin_cache_size_string[:-1]+']'
 			print(f"Average Cache Occupancy Per Bin: {bin_cache_size_string}")
 			print(f"Total cost: {bin_saturation[0]}")
@@ -329,22 +343,22 @@ def phased_CARL(addrs,binned_ri_distributions,binned_freq_hists,cache_size,carl_
 			new_bin_saturation=bin_saturation.copy()
 			
 			print(f"addr: {addr} ri: {lease_assignment.ri}")
-			print(f"bin target: {bin_target}")
+			print(f"bin targets: {bin_targets}")
 			num_full_bins=0
 			acceptable_ratio=0
 			for b,sat in bin_saturation.items():
-				if(sat>=bin_target):
+				if(sat>=bin_targets[b]):
 					num_full_bins+=1
 				new_capacity = sat + impact_dict[b]
 				
-				if(new_capacity >= bin_target):
-					avail_space = bin_target - sat
+				if(new_capacity >= bin_targets[b]):
+					avail_space = bin_targets[b] - sat
 					
 					#only care about bins if the lease shows up in them
 					if(impact_dict[b]!=0):
 						bin_ranks[b] = avail_space / impact_dict[b]
 					ordered_overflow[b]=new_capacity
-					print(f"\tbin: {b/bin_width} current capacity: {sat/bin_width}  avg impact: {impact_dict[b]/bin_width}")
+					print(f"\tbin: {b} current capacity: {sat/bin_width[b]}  avg impact: {impact_dict[b]/bin_width[b]}")
 
 			#sort capacities
 			sorted_capacities = {k:v for k,v in sorted(ordered_overflow.items(), key=lambda item: item[1])}
@@ -354,7 +368,7 @@ def phased_CARL(addrs,binned_ri_distributions,binned_freq_hists,cache_size,carl_
 			print("printing bin ranks sorted:")
 						
 			for i,b in enumerate(sorted_bins):
-				print(f"\tbin: {b/bin_width} rank: {sorted_bins[b]}")
+				print(f"\tbin: {b/bin_width[b]} rank: {sorted_bins[b]}")
 				if i == consensus - num_full_bins -  1:
 					acceptable_ratio = sorted_bins[b]
 					if(acceptable_ratio <0):
@@ -379,12 +393,12 @@ def phased_CARL(addrs,binned_ri_distributions,binned_freq_hists,cache_size,carl_
 				#Print Info
 				bin_cache_size_string='['
 				for b in bin_saturation:
-					bin_cache_size_string+=str(bin_saturation[b]/bin_width)[:4]+','	
+					bin_cache_size_string+=str(bin_saturation[b]/bin_width[b])[:4]+','	
 				bin_cache_size_string=bin_cache_size_string[:-1]+']'
 				print(f"Assigning {addr} dual lease lease {lease_assignment.ri} * {acceptable_ratio}. Bin saturation: {bin_cache_size_string}")
 	print(f"Final saturation:")
 	for b,sat in bin_saturation.items():
-		print(f"\t{b/bin_width},{sat}")
+		print(f"\t{b/bin_width[b]},{sat}")
 	return leases,duals
 		
 def main():
@@ -395,6 +409,7 @@ def main():
 	
 	cache_size=128
 	num_bins=int(args.num_bins)
+	
 	num_consensus = 1
 	sample_rate = 1/256
 	print(f"sample rate: {sample_rate}")
@@ -407,8 +422,9 @@ def main():
 	for address,distribution in ris.items():
 		print(f"{address},{distribution}")
 	addrs = ris.keys()
-	bin_width = math.ceil(last_address/num_bins)
-	binned_freqs,binned_ri_distributions = get_binned_hists(filename,bin_width)
+	#bin_width = math.ceil(last_address/num_bins)
+	bin_endpts=[0,1210000,2422524, 5200000, 8061438, 8061438 + (last_address - 8061438)/2 ,last_address]
+	binned_freqs,binned_ri_distributions = get_binned_hists(filename,bin_endpts)
 	#print("printing bin frequencies")
 	#for endpoint,d in binned_freqs.items():
 #		print(endpoint)
@@ -424,7 +440,7 @@ def main():
 	for l in carl_order:
 		print(l)
 	
-	leases,duals = phased_CARL(addrs,binned_ri_distributions,binned_freqs,cache_size,carl_order,bin_width,num_consensus,sample_rate)
+	leases,duals = phased_CARL(addrs,binned_ri_distributions,binned_freqs,cache_size,carl_order,bin_endpts,num_consensus,sample_rate)
 	print("Dump single leases (last one may be dual)")
 	for address,tup in duals.items():
 		lease = tup [0]
