@@ -1,2 +1,0 @@
-Address  | 6_1_leases_min/2mm_small_rand_min_leases.txt | 6_1_leases_median/2mm_small_rand_median_leases.txt
-000008c8 | e1a6 0.16801886820144477% 5e5 0.8319811317985553% | e1a6 0.3332306699157585% 5e5 0.6667693300842414% 

@@ -1,2 +1,0 @@
-Address  | leases_min/floyd_small_rand_min_leases.txt | 6_1_leases_min/floyd_small_rand_min_leases.txt
-00000788 | 9e703 0% 17 1% | 17 

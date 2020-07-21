@@ -1,2 +1,0 @@
-Address  | bin_variation_leases_6_3/2_bin/2mm_small_rand_9bit_2_bin_min.txt | bin_variation_leases_6_3/5_bin/2mm_small_rand_9bit_5_bin_min.txt
-000008c8 | e1a6 0.3617429426560063% 5e5 0.6382570573439936% | e1a6 0.27539508166071164% 5e5 0.7246049183392884% 

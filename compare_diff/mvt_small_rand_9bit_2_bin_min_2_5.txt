@@ -1,3 +1,0 @@
-Address  | bin_variation_leases_6_3/2_bin/mvt_small_rand_9bit_2_bin_min.txt | bin_variation_leases_6_3/5_bin/mvt_small_rand_9bit_5_bin_min.txt
-00000804 | 474ee 0.0022238374282572346% 18 0.9977761625717427% | 18 
-000008b8 | 7ff | 7ff 0.9453635031309677% 0 0.05463649686903227% 

@@ -1,3 +1,0 @@
-Address  | set_leases/2_way/atax_small_rand_2_way.txt | set_leases/64_way/atax_small_rand_64_way.txt
-0000077c | fc0 0.8204447814000505% 7 0.1795552185999495% | fc0 
-000006cc | 11 | fca 

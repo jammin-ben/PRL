@@ -1,2 +1,0 @@
-Address  | 6_1_leases_min/mvt_small_rand_min_leases.txt | 6_2_min_leases/mvt_small_rand_leases_min.txt
-000008b8 | 7ff 0.8883732291157792% 0 0.1116267708842208% | 7ff 0.8985945661568524% 0 0.1014054338431476% 

@@ -1,1 +1,0 @@
-Address  | 6_1_leases_median/atax_small_rand_median_leases.txt | 6_2_median_leases/atax_small_rand_leases_median.txt

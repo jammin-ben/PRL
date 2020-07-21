@@ -1,2 +1,0 @@
-Address  | CARL_leases/3mm_small_rand_9bit_with_neg_leases.txt | bin_variation_leases_6_3/1_bin/3mm_small_rand_9bit_1_bin_min.txt
-00000b38 | d93c 0.0256372% 40e 0.974363% | d93c 0.42073560599350235% 40e 0.5792643940064977% 
