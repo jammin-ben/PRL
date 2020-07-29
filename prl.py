@@ -95,7 +95,7 @@ def build_ri_distributions(trace_file):
 
 	for line in lines:
 		cells = line.split(',')
-		#cells[0]: address (string)
+		#cells[0]: phase + address (string)
 		#cells[1]: ri
 		#cells[2]: tag
 		#cells[3]: logical time
