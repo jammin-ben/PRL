@@ -21,8 +21,6 @@ def interpret_hex(string):
 	return convert_to_signed(int(newstring,16))
 	#return int(newstring,16)
 
-
-
 def build_hists(filename):
 	
 	with open(filename) as f:
