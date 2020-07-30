@@ -1,0 +1,218 @@
+DUMPING PHASE DICTS
+Phase 0
+| Ref 2124
+| | ri 1 freq 1
+| Ref 2384
+| | ri 2 freq 475
+| Ref 2396
+| | ri 8 freq 515
+| | ri 12 freq 11
+| Ref 2304
+| | ri 2 freq 480
+| Ref 2256
+| | ri 2 freq 436
+| Ref 2236
+| | ri 2 freq 500
+| Ref 2248
+| | ri 4 freq 484
+| Ref 2360
+| | ri 2 freq 459
+| Ref 2268
+| | ri 12 freq 444
+| Ref 2332
+| | ri 4 freq 463
+| Ref 2408
+| | ri 1 freq 451
+| Ref 2272
+| | ri 2 freq 460
+| Ref 2340
+| | ri 2 freq 492
+| Ref 2316
+| | ri 20 freq 396
+| | ri 991 freq 7
+| | ri 911 freq 20
+| | ri 1151 freq 4
+| | ri 1071 freq 2
+| Ref 2400
+| | ri 1 freq 473
+| Ref 2372
+| | ri 6 freq 455
+| Ref 2352
+| | ri 1211 freq 450
+| | ri 42365 freq 12
+| | ri 1238 freq 6
+| | ri 42392 freq 18
+| Ref 2320
+| | ri 2 freq 445
+| Ref 2412
+| | ri 2 freq 429
+| Ref 2296
+| | ri 4 freq 493
+| Ref 2204
+| | ri 5 freq 11
+| Ref 2416
+| | ri 2 freq 463
+| | ri 4 freq 9
+| Ref 2436
+| | ri 2 freq 7
+| Ref 2228
+| | ri 1 freq 8
+| Ref 2224
+| | ri 7 freq 4
+| Ref 2212
+| | ri 2 freq 9
+| Ref 2424
+| | ri 1 freq 5
+| Ref 2432
+| | ri 1 freq 7
+| Ref 2192
+| | ri 2 freq 8
+| Ref 2440
+| | ri 2 freq 7
+Phase 1
+| Ref 2664
+| | ri 1 freq 1090
+| Ref 2552
+| | ri 1 freq 1124
+| Ref 2608
+| | ri 2 freq 1111
+| Ref 2720
+| | ri 20 freq 1048
+| | ri 4 freq 15
+| Ref 2540
+| | ri 1 freq 1108
+| Ref 2676
+| | ri 1 freq 1069
+| Ref 2700
+| | ri 8 freq 1129
+| | ri 12 freq 13
+| Ref 2716
+| | ri 2 freq 1082
+| Ref 2644
+| | ri 2 freq 1081
+| Ref 2712
+| | ri 1 freq 1073
+| Ref 2532
+| | ri 1 freq 21
+| Ref 2572
+| | ri 12 freq 1113
+| Ref 2624
+| | ri 1 freq 1100
+| Ref 2600
+| | ri 1 freq 1044
+| Ref 2560
+| | ri 2 freq 1092
+| Ref 2576
+| | ri 1 freq 1065
+| Ref 2704
+| | ri 1 freq 1094
+| Ref 2688
+| | ri 2 freq 1084
+| Ref 2636
+| | ri 1 freq 1147
+| Ref 2620
+| | ri 20 freq 997
+| | ri 1311 freq 78
+| | ri -4636822 freq 1
+| | ri -5424981 freq 1
+| Ref 2656
+| | ri 1611 freq 982
+| | ri 88612 freq 61
+| | ri 88585 freq 10
+| | ri 1638 freq 7
+| | ri -2906232 freq 1
+| | ri -2909714 freq 1
+| Ref 2496
+| | ri 1 freq 14
+| Ref 2740
+| | ri 2 freq 9
+| Ref 2744
+| | ri 7 freq 23
+| Ref 2728
+| | ri 1 freq 14
+| Ref 2736
+| | ri 1 freq 10
+| Ref 2528
+| | ri 7 freq 11
+| Ref 2516
+| | ri 2 freq 12
+| Ref 2508
+| | ri 1 freq 7
+| Ref 2768
+| | ri 3 freq 1
+Phase 2
+| Ref 2864
+| | ri 2 freq 538
+| Ref 2936
+| | ri 2 freq 524
+| Ref 2980
+| | ri 2 freq 563
+| Ref 2892
+| | ri 14 freq 523
+| Ref 2996
+| | ri 1 freq 580
+| Ref 2880
+| | ri 2 freq 531
+| Ref 2856
+| | ri 1 freq 549
+| Ref 2992
+| | ri 8 freq 570
+| | ri 12 freq 4
+| | ri 19 freq 2
+| Ref 3008
+| | ri 2 freq 575
+| Ref 2916
+| | ri 1 freq 548
+| Ref 2928
+| | ri 1 freq 520
+| Ref 2900
+| | ri 2 freq 534
+| Ref 2844
+| | ri 1 freq 553
+| Ref 3012
+| | ri 6 freq 548
+| | ri 4 freq 7
+| Ref 3004
+| | ri 1 freq 557
+| Ref 2876
+| | ri 12 freq 542
+| Ref 2948
+| | ri 1011 freq 496
+| | ri 1038 freq 8
+| | ri 55585 freq 6
+| | ri 55612 freq 24
+| | ri -38777 freq 1
+| Ref 2968
+| | ri 1 freq 535
+| Ref 2912
+| | ri 20 freq 493
+| | ri 991 freq 3
+| | ri 951 freq 5
+| | ri 791 freq 3
+| | ri 711 freq 17
+| | ri 911 freq 2
+| | ri 751 freq 1
+| | ri 831 freq 1
+| Ref 2956
+| | ri 1 freq 539
+| Ref 3036
+| | ri 7 freq 15
+| Ref 3020
+| | ri 1 freq 11
+| Ref 2832
+| | ri 7 freq 12
+| Ref 2812
+| | ri 1 freq 14
+| Ref 2800
+| | ri 1 freq 15
+| Ref 2836
+| | ri 1 freq 6
+| Ref 3028
+| | ri 1 freq 9
+| Ref 3032
+| | ri 2 freq 8
+| Ref 2820
+| | ri 2 freq 10
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+COMPUTING SET UNION
+0
