@@ -1,29 +1,5 @@
-#step 1: implement CARL to get ordering of lease assignments
-
-#TODO: scale down ppuc
-#TODO: apply grouping
-
 import math
 import argparse
-############_CLASSES_######################
-#class ri_histogram():
-#	def __init__(self,address):
-#		self.address=address
-#		self.ris = {}
-
-#	def __repr__(self):
-#		ret = "\n"
-#		for ri,freq in self.ris.items():
-#			ret += "\t["+str(ri)+","+str(freq)+"]\n"
-#		return ret
-
-#	def add_ri(self,ri):
-#		if ri in self.ris:
-#			self.ris[ri]+=1
-#		else:
-#			self.ris[ri]=1
-#	def get_num_bins(self):
-#		return len(self.ris)
 
 class Lease():
 	def __init__(self,address,ri):
@@ -40,14 +16,11 @@ class Lease():
 		self.ppuc_dual=ppuc_dual
 		self.dual_prob=dual_prob
 		
-	
-		
 ########_HELPER_FUNCTIONS_###############
 def interpret_address(address):
 	phase = (address & 0xFF000000)>>24
 	addr =   address & 0x00FFFFFF
 	return phase,addr
-
 
 def convert_to_signed(num):
 	if num & 0x8000000:
@@ -129,33 +102,6 @@ def build_hists(filename):
 
 	return phase_dicts,global_hists,phase_populations
 
-"""def build_ri_distributions(trace_file):
-	distributions={} #Key: address. Value: ri_histogram object
-
-	#read file
-	with open(trace_file,'r') as f:
-		lines = f.readlines()
-
-	for line in lines:
-		cells = line.split(',')
-		#cells[0]: phase + address (string)
-		#cells[1]: ri
-		#cells[2]: tag
-		#cells[3]: logical time
-		if cells[0] not in distributions:
-			#construct new ri_histogram object
-			hist = ri_histogram(cells[0])
-			#add it to distributions
-			distributions[cells[0]] = hist	
-		else:
-			hist = distributions[cells[0]]
-
-		#increment value of the correct histogram
-		hist.add_ri(interpret_hex(cells[1]))
-		
-	last_address = int(lines[-1].split(",")[3])
-	return distributions,last_address
-"""
 def carl(distributions):
 
 	carl_order = []
@@ -230,70 +176,6 @@ def get_max_ppuc_single(distribution,current_lease):
 	
 	return max_value,lease
 
-"""def get_binned_hists(trace_file,bin_endpts):
-	#read file
-	bins={}
-	binned_ri_distributions = {}
-	curr_bin = 0
-	bin_idx = 0
-	
-	bin_width = bin_endpts[1]-bin_endpts[0]
-
-	curr_bin_dict={}
-	curr_ri_distribution_dict={}
-
-	bins[curr_bin]=curr_bin_dict
-	binned_ri_distributions[curr_bin]=curr_ri_distribution_dict	
-
-	all_keys=[]
-	with open(trace_file,'r') as f:
-		lines = f.readlines()
-
-	for line in lines:
-		cells = line.split(',')
-		#cells[0]: address (string)
-		#cells[1]: ri
-		#cells[2]: tag
-		#cells[3]: logical time
-		
-		if(int(cells[3])>curr_bin+bin_width):
-			curr_bin_dict={}
-			curr_ri_distribution_dict={}
-
-			curr_bin+=bin_width
-			bins[curr_bin]=curr_bin_dict
-			binned_ri_distributions[curr_bin]=curr_ri_distribution_dict	
-			bin_idx +=1 
-			bin_width = bin_endpts[bin_idx+1]-bin_endpts[bin_idx]
-			
-		#handle frequency dict
-		if cells[0] not in curr_bin_dict:
-			curr_bin_dict[cells[0]]=1
-		else:
-			curr_bin_dict[cells[0]]+=1
-
-		#handle ri distribution dict
-		if cells[0] not in curr_ri_distribution_dict:
-			#construct new ri_histogram object
-			hist = ri_histogram(cells[0])
-			#add it to curr_ri_distribution_dict
-			curr_ri_distribution_dict[cells[0]] = hist	
-		else:
-			hist = curr_ri_distribution_dict[cells[0]]
-		#increment value of the correct histogram
-		hist.add_ri(interpret_hex(cells[1]))
-
-		#keep track of all addresses seen
-		if(cells[0] not in all_keys):
-			all_keys.append(cells[0])
-
-	#append zeroes for addresses not in bins
-	for b in bins:
-		for k in all_keys:
-			if k not in bins[b]:
-				bins[b][k]=0
-	return bins,binned_ri_distributions
-"""
 #ri_distributions: distribution for each reference
 #binned_freq_hists: histograms of frequency of accesses per program phase
 #cache_size: number of cache blocks in fully assoc cache
@@ -375,7 +257,6 @@ def PRL(addrs,binned_ri_distributions,phase_populations,cache_size,carl_order,co
 					if(impact_dict[p]!=0):
 						bin_ranks[p] = avail_space / impact_dict[p]
 
-					#7/30 MAY NEED TO MULTIPLY BY CACHE SIZE
 					print(f"\tphase: {p} avg cache size: {sat/phase_populations[p]}  avg cache impact: {impact_dict[p]/phase_populations[p]}")
 
 			#sort capacities
